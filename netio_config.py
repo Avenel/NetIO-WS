@@ -4,7 +4,7 @@
 # use this section to set the parameters for your setup
 # -----------------------------------------------------------------------------------------------
 
-HOST = ''	# 
+HOST = ''	#
 PORT = 54321			# enter port number
 
 # dictionary with for send command: [group code] [device]
@@ -37,7 +37,7 @@ time_multi = 1	   # 1: value are seconds, 60: value should be minutes
 debug_level   = 0  # 1 will prevent executing send command or reading 1-wire sensor
 
 # verbose 1: display client commands // 2: 1 + display server reply // 2 + debug messages
-verbose_level = 1
+verbose_level = 2
 
 # this is the file where the status is stored
 pickle_file  = "433_status.p"
@@ -52,7 +52,7 @@ oscmd_Light  = "sudo /home/pi/raspberry-remote/./send "
 oscmd_Light2 = "sudo /home/pi/433/./433send "
 # sudo /home/pi/433/./433send2  -k 00101 -d 5 -s 0
 
-# Timer: 
+# Timer:
 # Mode 0: switch to [state] when timer elapsed
 # Mode 1: switch to [state] when timer starts and to ![state] when elapsed
 timer_mode = 1
@@ -60,7 +60,7 @@ t = 0
 
 # lan computers defined in /etc/host and /etc/ethers
 # 				pc-name   : [operating system, username, password]
-lan_dict = {	"raspi1" : ["linux","pi","raspberry"], 
+lan_dict = {	"raspi1" : ["linux","pi","raspberry"],
 				"raspi2" : ["linux","pi","raspberry"],
 				"fritzi" : ["linux","pi","raspberry"],
 				"mahjong": ["win7","shutdown","raspdx"],
