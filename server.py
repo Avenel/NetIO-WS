@@ -1119,16 +1119,20 @@ if __name__ == '__main__':
 
     try:
         import asyncio
+        print "using asyncio"
     except ImportError:
         ## Trollius >= 0.3 was renamed
+        print "using trollius"
         import trollius as asyncio
 
-        factory = WebSocketServerFactory("ws://localhost:9000", debug = False)
-        factory.protocol = MyServerProtocol
+    print "building factory"
+    factory = WebSocketServerFactory("ws://192.168.2.21:54321", debug = False)
+    factory.protocol = MyServerProtocol
 
-        loop = asyncio.get_event_loop()
-        coro = loop.create_server(factory, '127.0.0.1', 9000)
-        server = loop.run_until_complete(coro)
+    print "setup server"
+    loop = asyncio.get_event_loop()
+    coro = loop.create_server(factory, '192.168.2.21', 54321)
+    server = loop.run_until_complete(coro)
 
     try:
         loop.run_forever()
