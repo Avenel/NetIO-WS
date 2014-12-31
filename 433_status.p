@@ -1,0 +1,30 @@
+(dp0
+S'Fenster seitlich'
+p1
+I0
+sS'Ambilight'
+p2
+I0
+sS'T\xc3\xbcr1'
+p3
+I0
+sS'Stehlar'
+p4
+I0
+sS'Couch'
+p5
+S'0'
+p6
+sS'Stehlal'
+p7
+I0
+sS'Reseve'
+p8
+I0
+sS'Fernseher'
+p9
+I0
+sS'Fenster Garten'
+p10
+I0
+s.
